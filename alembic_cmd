@@ -1,0 +1,1 @@
+alembic -n devdb revision --autogenerate -m "1"

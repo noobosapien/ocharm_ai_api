@@ -1,0 +1,226 @@
+2024-06-29 11:03:56,498 - DEBUG - Looking for locale `en_US` in provider `faker.providers.address`.
+2024-06-29 11:03:56,500 - DEBUG - Provider `faker.providers.address` has been localized to `en_US`.
+2024-06-29 11:03:56,505 - DEBUG - Looking for locale `en_US` in provider `faker.providers.automotive`.
+2024-06-29 11:03:56,506 - DEBUG - Provider `faker.providers.automotive` has been localized to `en_US`.
+2024-06-29 11:03:56,507 - DEBUG - Looking for locale `en_US` in provider `faker.providers.bank`.
+2024-06-29 11:03:56,507 - DEBUG - Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2024-06-29 11:03:56,508 - DEBUG - Looking for locale `en_US` in provider `faker.providers.barcode`.
+2024-06-29 11:03:56,508 - DEBUG - Provider `faker.providers.barcode` has been localized to `en_US`.
+2024-06-29 11:03:56,511 - DEBUG - Looking for locale `en_US` in provider `faker.providers.color`.
+2024-06-29 11:03:56,512 - DEBUG - Provider `faker.providers.color` has been localized to `en_US`.
+2024-06-29 11:03:56,513 - DEBUG - Looking for locale `en_US` in provider `faker.providers.company`.
+2024-06-29 11:03:56,514 - DEBUG - Provider `faker.providers.company` has been localized to `en_US`.
+2024-06-29 11:03:56,515 - DEBUG - Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2024-06-29 11:03:56,515 - DEBUG - Provider `faker.providers.credit_card` has been localized to `en_US`.
+2024-06-29 11:03:56,516 - DEBUG - Looking for locale `en_US` in provider `faker.providers.currency`.
+2024-06-29 11:03:56,516 - DEBUG - Provider `faker.providers.currency` has been localized to `en_US`.
+2024-06-29 11:03:56,517 - DEBUG - Looking for locale `en_US` in provider `faker.providers.date_time`.
+2024-06-29 11:03:56,518 - DEBUG - Provider `faker.providers.date_time` has been localized to `en_US`.
+2024-06-29 11:03:56,519 - DEBUG - Provider `faker.providers.emoji` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:03:56,519 - DEBUG - Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:03:56,519 - DEBUG - Looking for locale `en_US` in provider `faker.providers.geo`.
+2024-06-29 11:03:56,520 - DEBUG - Provider `faker.providers.geo` has been localized to `en_US`.
+2024-06-29 11:03:56,520 - DEBUG - Looking for locale `en_US` in provider `faker.providers.internet`.
+2024-06-29 11:03:56,521 - DEBUG - Provider `faker.providers.internet` has been localized to `en_US`.
+2024-06-29 11:03:56,522 - DEBUG - Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:03:56,522 - DEBUG - Looking for locale `en_US` in provider `faker.providers.job`.
+2024-06-29 11:03:56,523 - DEBUG - Provider `faker.providers.job` has been localized to `en_US`.
+2024-06-29 11:03:56,523 - DEBUG - Looking for locale `en_US` in provider `faker.providers.lorem`.
+2024-06-29 11:03:56,524 - DEBUG - Provider `faker.providers.lorem` has been localized to `en_US`.
+2024-06-29 11:03:56,533 - DEBUG - Looking for locale `en_US` in provider `faker.providers.misc`.
+2024-06-29 11:03:56,533 - DEBUG - Provider `faker.providers.misc` has been localized to `en_US`.
+2024-06-29 11:03:56,534 - DEBUG - Looking for locale `en_US` in provider `faker.providers.passport`.
+2024-06-29 11:03:56,534 - DEBUG - Provider `faker.providers.passport` has been localized to `en_US`.
+2024-06-29 11:03:56,536 - DEBUG - Looking for locale `en_US` in provider `faker.providers.person`.
+2024-06-29 11:03:56,537 - DEBUG - Provider `faker.providers.person` has been localized to `en_US`.
+2024-06-29 11:03:56,581 - DEBUG - Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2024-06-29 11:03:56,582 - DEBUG - Provider `faker.providers.phone_number` has been localized to `en_US`.
+2024-06-29 11:03:56,583 - DEBUG - Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:03:56,583 - DEBUG - Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:03:56,583 - DEBUG - Provider `faker.providers.sbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:03:56,583 - DEBUG - Looking for locale `en_US` in provider `faker.providers.ssn`.
+2024-06-29 11:03:56,584 - DEBUG - Provider `faker.providers.ssn` has been localized to `en_US`.
+2024-06-29 11:03:56,586 - DEBUG - Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:03:56,587 - DEBUG - Trying paths: ['/home/migara/.docker/config.json', '/home/migara/.dockercfg']
+2024-06-29 11:03:56,587 - DEBUG - Found file at path: /home/migara/.docker/config.json
+2024-06-29 11:03:56,587 - DEBUG - Found 'auths' section
+2024-06-29 11:03:56,587 - DEBUG - Found entry (registry='228983631799.dkr.ecr.ap-southeast-2.amazonaws.com', username='AWS')
+2024-06-29 11:03:56,591 - DEBUG - http://localhost:None "GET /version HTTP/11" 200 824
+2024-06-29 11:03:56,593 - DEBUG - http://localhost:None "GET /v1.45/containers/test-db/json HTTP/11" 404 41
+2024-06-29 11:03:56,632 - DEBUG - http://localhost:None "POST /v1.45/containers/create?name=test-db HTTP/11" 201 88
+2024-06-29 11:03:56,634 - DEBUG - http://localhost:None "GET /v1.45/containers/09343da5d228ba0bb1cf7990fb80fd8849bfb67f04e4768c27c75f7a28b26bc5/json HTTP/11" 200 None
+2024-06-29 11:03:56,644 - DEBUG - http://localhost:None "POST /v1.45/containers/09343da5d228ba0bb1cf7990fb80fd8849bfb67f04e4768c27c75f7a28b26bc5/start HTTP/11" 404 51
+2024-06-29 11:05:34,237 - DEBUG - Looking for locale `en_US` in provider `faker.providers.address`.
+2024-06-29 11:05:34,238 - DEBUG - Provider `faker.providers.address` has been localized to `en_US`.
+2024-06-29 11:05:34,239 - DEBUG - Looking for locale `en_US` in provider `faker.providers.automotive`.
+2024-06-29 11:05:34,240 - DEBUG - Provider `faker.providers.automotive` has been localized to `en_US`.
+2024-06-29 11:05:34,241 - DEBUG - Looking for locale `en_US` in provider `faker.providers.bank`.
+2024-06-29 11:05:34,242 - DEBUG - Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2024-06-29 11:05:34,242 - DEBUG - Looking for locale `en_US` in provider `faker.providers.barcode`.
+2024-06-29 11:05:34,243 - DEBUG - Provider `faker.providers.barcode` has been localized to `en_US`.
+2024-06-29 11:05:34,244 - DEBUG - Looking for locale `en_US` in provider `faker.providers.color`.
+2024-06-29 11:05:34,245 - DEBUG - Provider `faker.providers.color` has been localized to `en_US`.
+2024-06-29 11:05:34,245 - DEBUG - Looking for locale `en_US` in provider `faker.providers.company`.
+2024-06-29 11:05:34,246 - DEBUG - Provider `faker.providers.company` has been localized to `en_US`.
+2024-06-29 11:05:34,247 - DEBUG - Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2024-06-29 11:05:34,247 - DEBUG - Provider `faker.providers.credit_card` has been localized to `en_US`.
+2024-06-29 11:05:34,248 - DEBUG - Looking for locale `en_US` in provider `faker.providers.currency`.
+2024-06-29 11:05:34,248 - DEBUG - Provider `faker.providers.currency` has been localized to `en_US`.
+2024-06-29 11:05:34,249 - DEBUG - Looking for locale `en_US` in provider `faker.providers.date_time`.
+2024-06-29 11:05:34,250 - DEBUG - Provider `faker.providers.date_time` has been localized to `en_US`.
+2024-06-29 11:05:34,250 - DEBUG - Provider `faker.providers.emoji` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:05:34,250 - DEBUG - Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:05:34,251 - DEBUG - Looking for locale `en_US` in provider `faker.providers.geo`.
+2024-06-29 11:05:34,251 - DEBUG - Provider `faker.providers.geo` has been localized to `en_US`.
+2024-06-29 11:05:34,251 - DEBUG - Looking for locale `en_US` in provider `faker.providers.internet`.
+2024-06-29 11:05:34,252 - DEBUG - Provider `faker.providers.internet` has been localized to `en_US`.
+2024-06-29 11:05:34,253 - DEBUG - Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:05:34,253 - DEBUG - Looking for locale `en_US` in provider `faker.providers.job`.
+2024-06-29 11:05:34,254 - DEBUG - Provider `faker.providers.job` has been localized to `en_US`.
+2024-06-29 11:05:34,254 - DEBUG - Looking for locale `en_US` in provider `faker.providers.lorem`.
+2024-06-29 11:05:34,255 - DEBUG - Provider `faker.providers.lorem` has been localized to `en_US`.
+2024-06-29 11:05:34,257 - DEBUG - Looking for locale `en_US` in provider `faker.providers.misc`.
+2024-06-29 11:05:34,257 - DEBUG - Provider `faker.providers.misc` has been localized to `en_US`.
+2024-06-29 11:05:34,258 - DEBUG - Looking for locale `en_US` in provider `faker.providers.passport`.
+2024-06-29 11:05:34,258 - DEBUG - Provider `faker.providers.passport` has been localized to `en_US`.
+2024-06-29 11:05:34,259 - DEBUG - Looking for locale `en_US` in provider `faker.providers.person`.
+2024-06-29 11:05:34,260 - DEBUG - Provider `faker.providers.person` has been localized to `en_US`.
+2024-06-29 11:05:34,264 - DEBUG - Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2024-06-29 11:05:34,266 - DEBUG - Provider `faker.providers.phone_number` has been localized to `en_US`.
+2024-06-29 11:05:34,266 - DEBUG - Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:05:34,266 - DEBUG - Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:05:34,266 - DEBUG - Provider `faker.providers.sbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:05:34,266 - DEBUG - Looking for locale `en_US` in provider `faker.providers.ssn`.
+2024-06-29 11:05:34,267 - DEBUG - Provider `faker.providers.ssn` has been localized to `en_US`.
+2024-06-29 11:05:34,268 - DEBUG - Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:05:34,268 - DEBUG - Trying paths: ['/home/migara/.docker/config.json', '/home/migara/.dockercfg']
+2024-06-29 11:05:34,269 - DEBUG - Found file at path: /home/migara/.docker/config.json
+2024-06-29 11:05:34,269 - DEBUG - Found 'auths' section
+2024-06-29 11:05:34,269 - DEBUG - Found entry (registry='228983631799.dkr.ecr.ap-southeast-2.amazonaws.com', username='AWS')
+2024-06-29 11:05:34,274 - DEBUG - http://localhost:None "GET /version HTTP/11" 200 824
+2024-06-29 11:05:34,275 - DEBUG - http://localhost:None "GET /v1.45/containers/test-db/json HTTP/11" 200 None
+2024-06-29 11:05:34,276 - DEBUG - http://localhost:None "POST /v1.45/containers/09343da5d228ba0bb1cf7990fb80fd8849bfb67f04e4768c27c75f7a28b26bc5/stop HTTP/11" 304 0
+2024-06-29 11:05:34,285 - DEBUG - http://localhost:None "DELETE /v1.45/containers/09343da5d228ba0bb1cf7990fb80fd8849bfb67f04e4768c27c75f7a28b26bc5?v=False&link=False&force=False HTTP/11" 204 0
+2024-06-29 11:05:34,317 - DEBUG - http://localhost:None "POST /v1.45/containers/create?name=test-db HTTP/11" 201 88
+2024-06-29 11:05:34,318 - DEBUG - http://localhost:None "GET /v1.45/containers/5383f6b1cac6315415ffbb3f93ea27de5c6a7ceb02d8d0489df95cc140bda5f8/json HTTP/11" 200 None
+2024-06-29 11:05:34,603 - DEBUG - http://localhost:None "POST /v1.45/containers/5383f6b1cac6315415ffbb3f93ea27de5c6a7ceb02d8d0489df95cc140bda5f8/start HTTP/11" 204 0
+2024-06-29 11:05:34,604 - DEBUG - http://localhost:None "GET /v1.45/containers/5383f6b1cac6315415ffbb3f93ea27de5c6a7ceb02d8d0489df95cc140bda5f8/json HTTP/11" 200 None
+2024-06-29 11:05:34,605 - DEBUG - http://localhost:None "GET /v1.45/containers/5383f6b1cac6315415ffbb3f93ea27de5c6a7ceb02d8d0489df95cc140bda5f8/json HTTP/11" 200 None
+2024-06-29 11:05:35,610 - DEBUG - http://localhost:None "GET /v1.45/containers/5383f6b1cac6315415ffbb3f93ea27de5c6a7ceb02d8d0489df95cc140bda5f8/json HTTP/11" 200 None
+2024-06-29 11:05:36,616 - DEBUG - http://localhost:None "GET /v1.45/containers/5383f6b1cac6315415ffbb3f93ea27de5c6a7ceb02d8d0489df95cc140bda5f8/json HTTP/11" 200 None
+2024-06-29 11:09:11,565 - DEBUG - Looking for locale `en_US` in provider `faker.providers.address`.
+2024-06-29 11:09:11,566 - DEBUG - Provider `faker.providers.address` has been localized to `en_US`.
+2024-06-29 11:09:11,567 - DEBUG - Looking for locale `en_US` in provider `faker.providers.automotive`.
+2024-06-29 11:09:11,568 - DEBUG - Provider `faker.providers.automotive` has been localized to `en_US`.
+2024-06-29 11:09:11,569 - DEBUG - Looking for locale `en_US` in provider `faker.providers.bank`.
+2024-06-29 11:09:11,570 - DEBUG - Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2024-06-29 11:09:11,570 - DEBUG - Looking for locale `en_US` in provider `faker.providers.barcode`.
+2024-06-29 11:09:11,570 - DEBUG - Provider `faker.providers.barcode` has been localized to `en_US`.
+2024-06-29 11:09:11,572 - DEBUG - Looking for locale `en_US` in provider `faker.providers.color`.
+2024-06-29 11:09:11,572 - DEBUG - Provider `faker.providers.color` has been localized to `en_US`.
+2024-06-29 11:09:11,572 - DEBUG - Looking for locale `en_US` in provider `faker.providers.company`.
+2024-06-29 11:09:11,573 - DEBUG - Provider `faker.providers.company` has been localized to `en_US`.
+2024-06-29 11:09:11,574 - DEBUG - Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2024-06-29 11:09:11,574 - DEBUG - Provider `faker.providers.credit_card` has been localized to `en_US`.
+2024-06-29 11:09:11,575 - DEBUG - Looking for locale `en_US` in provider `faker.providers.currency`.
+2024-06-29 11:09:11,575 - DEBUG - Provider `faker.providers.currency` has been localized to `en_US`.
+2024-06-29 11:09:11,576 - DEBUG - Looking for locale `en_US` in provider `faker.providers.date_time`.
+2024-06-29 11:09:11,577 - DEBUG - Provider `faker.providers.date_time` has been localized to `en_US`.
+2024-06-29 11:09:11,577 - DEBUG - Provider `faker.providers.emoji` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:09:11,577 - DEBUG - Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:09:11,577 - DEBUG - Looking for locale `en_US` in provider `faker.providers.geo`.
+2024-06-29 11:09:11,578 - DEBUG - Provider `faker.providers.geo` has been localized to `en_US`.
+2024-06-29 11:09:11,578 - DEBUG - Looking for locale `en_US` in provider `faker.providers.internet`.
+2024-06-29 11:09:11,579 - DEBUG - Provider `faker.providers.internet` has been localized to `en_US`.
+2024-06-29 11:09:11,580 - DEBUG - Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:09:11,580 - DEBUG - Looking for locale `en_US` in provider `faker.providers.job`.
+2024-06-29 11:09:11,581 - DEBUG - Provider `faker.providers.job` has been localized to `en_US`.
+2024-06-29 11:09:11,581 - DEBUG - Looking for locale `en_US` in provider `faker.providers.lorem`.
+2024-06-29 11:09:11,582 - DEBUG - Provider `faker.providers.lorem` has been localized to `en_US`.
+2024-06-29 11:09:11,584 - DEBUG - Looking for locale `en_US` in provider `faker.providers.misc`.
+2024-06-29 11:09:11,584 - DEBUG - Provider `faker.providers.misc` has been localized to `en_US`.
+2024-06-29 11:09:11,585 - DEBUG - Looking for locale `en_US` in provider `faker.providers.passport`.
+2024-06-29 11:09:11,585 - DEBUG - Provider `faker.providers.passport` has been localized to `en_US`.
+2024-06-29 11:09:11,586 - DEBUG - Looking for locale `en_US` in provider `faker.providers.person`.
+2024-06-29 11:09:11,587 - DEBUG - Provider `faker.providers.person` has been localized to `en_US`.
+2024-06-29 11:09:11,590 - DEBUG - Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2024-06-29 11:09:11,591 - DEBUG - Provider `faker.providers.phone_number` has been localized to `en_US`.
+2024-06-29 11:09:11,591 - DEBUG - Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:09:11,592 - DEBUG - Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:09:11,592 - DEBUG - Provider `faker.providers.sbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:09:11,592 - DEBUG - Looking for locale `en_US` in provider `faker.providers.ssn`.
+2024-06-29 11:09:11,593 - DEBUG - Provider `faker.providers.ssn` has been localized to `en_US`.
+2024-06-29 11:09:11,593 - DEBUG - Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:09:11,594 - DEBUG - Trying paths: ['/home/migara/.docker/config.json', '/home/migara/.dockercfg']
+2024-06-29 11:09:11,594 - DEBUG - Found file at path: /home/migara/.docker/config.json
+2024-06-29 11:09:11,594 - DEBUG - Found 'auths' section
+2024-06-29 11:09:11,594 - DEBUG - Found entry (registry='228983631799.dkr.ecr.ap-southeast-2.amazonaws.com', username='AWS')
+2024-06-29 11:09:11,600 - DEBUG - http://localhost:None "GET /version HTTP/11" 200 824
+2024-06-29 11:09:11,601 - DEBUG - http://localhost:None "GET /v1.45/containers/test-db/json HTTP/11" 200 None
+2024-06-29 11:09:11,984 - DEBUG - http://localhost:None "POST /v1.45/containers/5383f6b1cac6315415ffbb3f93ea27de5c6a7ceb02d8d0489df95cc140bda5f8/stop HTTP/11" 204 0
+2024-06-29 11:09:12,002 - DEBUG - http://localhost:None "DELETE /v1.45/containers/5383f6b1cac6315415ffbb3f93ea27de5c6a7ceb02d8d0489df95cc140bda5f8?v=False&link=False&force=False HTTP/11" 204 0
+2024-06-29 11:09:12,037 - DEBUG - http://localhost:None "POST /v1.45/containers/create?name=test-db HTTP/11" 201 88
+2024-06-29 11:09:12,039 - DEBUG - http://localhost:None "GET /v1.45/containers/ad8181dbd44c12fe0dc438f93be6a524cf9fd80f64331e3c2bf2e30da49e66b6/json HTTP/11" 200 None
+2024-06-29 11:09:12,347 - DEBUG - http://localhost:None "POST /v1.45/containers/ad8181dbd44c12fe0dc438f93be6a524cf9fd80f64331e3c2bf2e30da49e66b6/start HTTP/11" 204 0
+2024-06-29 11:09:12,349 - DEBUG - http://localhost:None "GET /v1.45/containers/ad8181dbd44c12fe0dc438f93be6a524cf9fd80f64331e3c2bf2e30da49e66b6/json HTTP/11" 200 None
+2024-06-29 11:09:12,350 - DEBUG - http://localhost:None "GET /v1.45/containers/ad8181dbd44c12fe0dc438f93be6a524cf9fd80f64331e3c2bf2e30da49e66b6/json HTTP/11" 200 None
+2024-06-29 11:09:13,352 - DEBUG - http://localhost:None "GET /v1.45/containers/ad8181dbd44c12fe0dc438f93be6a524cf9fd80f64331e3c2bf2e30da49e66b6/json HTTP/11" 200 None
+2024-06-29 11:09:14,357 - DEBUG - http://localhost:None "GET /v1.45/containers/ad8181dbd44c12fe0dc438f93be6a524cf9fd80f64331e3c2bf2e30da49e66b6/json HTTP/11" 200 None
+2024-06-29 11:10:20,368 - DEBUG - Looking for locale `en_US` in provider `faker.providers.address`.
+2024-06-29 11:10:20,369 - DEBUG - Provider `faker.providers.address` has been localized to `en_US`.
+2024-06-29 11:10:20,371 - DEBUG - Looking for locale `en_US` in provider `faker.providers.automotive`.
+2024-06-29 11:10:20,372 - DEBUG - Provider `faker.providers.automotive` has been localized to `en_US`.
+2024-06-29 11:10:20,372 - DEBUG - Looking for locale `en_US` in provider `faker.providers.bank`.
+2024-06-29 11:10:20,373 - DEBUG - Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2024-06-29 11:10:20,374 - DEBUG - Looking for locale `en_US` in provider `faker.providers.barcode`.
+2024-06-29 11:10:20,374 - DEBUG - Provider `faker.providers.barcode` has been localized to `en_US`.
+2024-06-29 11:10:20,375 - DEBUG - Looking for locale `en_US` in provider `faker.providers.color`.
+2024-06-29 11:10:20,376 - DEBUG - Provider `faker.providers.color` has been localized to `en_US`.
+2024-06-29 11:10:20,376 - DEBUG - Looking for locale `en_US` in provider `faker.providers.company`.
+2024-06-29 11:10:20,377 - DEBUG - Provider `faker.providers.company` has been localized to `en_US`.
+2024-06-29 11:10:20,378 - DEBUG - Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2024-06-29 11:10:20,378 - DEBUG - Provider `faker.providers.credit_card` has been localized to `en_US`.
+2024-06-29 11:10:20,379 - DEBUG - Looking for locale `en_US` in provider `faker.providers.currency`.
+2024-06-29 11:10:20,380 - DEBUG - Provider `faker.providers.currency` has been localized to `en_US`.
+2024-06-29 11:10:20,381 - DEBUG - Looking for locale `en_US` in provider `faker.providers.date_time`.
+2024-06-29 11:10:20,382 - DEBUG - Provider `faker.providers.date_time` has been localized to `en_US`.
+2024-06-29 11:10:20,383 - DEBUG - Provider `faker.providers.emoji` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:10:20,383 - DEBUG - Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:10:20,383 - DEBUG - Looking for locale `en_US` in provider `faker.providers.geo`.
+2024-06-29 11:10:20,383 - DEBUG - Provider `faker.providers.geo` has been localized to `en_US`.
+2024-06-29 11:10:20,384 - DEBUG - Looking for locale `en_US` in provider `faker.providers.internet`.
+2024-06-29 11:10:20,385 - DEBUG - Provider `faker.providers.internet` has been localized to `en_US`.
+2024-06-29 11:10:20,386 - DEBUG - Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:10:20,386 - DEBUG - Looking for locale `en_US` in provider `faker.providers.job`.
+2024-06-29 11:10:20,387 - DEBUG - Provider `faker.providers.job` has been localized to `en_US`.
+2024-06-29 11:10:20,387 - DEBUG - Looking for locale `en_US` in provider `faker.providers.lorem`.
+2024-06-29 11:10:20,388 - DEBUG - Provider `faker.providers.lorem` has been localized to `en_US`.
+2024-06-29 11:10:20,390 - DEBUG - Looking for locale `en_US` in provider `faker.providers.misc`.
+2024-06-29 11:10:20,391 - DEBUG - Provider `faker.providers.misc` has been localized to `en_US`.
+2024-06-29 11:10:20,391 - DEBUG - Looking for locale `en_US` in provider `faker.providers.passport`.
+2024-06-29 11:10:20,391 - DEBUG - Provider `faker.providers.passport` has been localized to `en_US`.
+2024-06-29 11:10:20,392 - DEBUG - Looking for locale `en_US` in provider `faker.providers.person`.
+2024-06-29 11:10:20,393 - DEBUG - Provider `faker.providers.person` has been localized to `en_US`.
+2024-06-29 11:10:20,397 - DEBUG - Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2024-06-29 11:10:20,398 - DEBUG - Provider `faker.providers.phone_number` has been localized to `en_US`.
+2024-06-29 11:10:20,399 - DEBUG - Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:10:20,399 - DEBUG - Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:10:20,399 - DEBUG - Provider `faker.providers.sbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:10:20,399 - DEBUG - Looking for locale `en_US` in provider `faker.providers.ssn`.
+2024-06-29 11:10:20,400 - DEBUG - Provider `faker.providers.ssn` has been localized to `en_US`.
+2024-06-29 11:10:20,400 - DEBUG - Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-06-29 11:10:20,401 - DEBUG - Trying paths: ['/home/migara/.docker/config.json', '/home/migara/.dockercfg']
+2024-06-29 11:10:20,401 - DEBUG - Found file at path: /home/migara/.docker/config.json
+2024-06-29 11:10:20,401 - DEBUG - Found 'auths' section
+2024-06-29 11:10:20,401 - DEBUG - Found entry (registry='228983631799.dkr.ecr.ap-southeast-2.amazonaws.com', username='AWS')
+2024-06-29 11:10:20,406 - DEBUG - http://localhost:None "GET /version HTTP/11" 200 824
+2024-06-29 11:10:20,408 - DEBUG - http://localhost:None "GET /v1.45/containers/test-db/json HTTP/11" 200 None
+2024-06-29 11:10:20,800 - DEBUG - http://localhost:None "POST /v1.45/containers/ad8181dbd44c12fe0dc438f93be6a524cf9fd80f64331e3c2bf2e30da49e66b6/stop HTTP/11" 204 0
+2024-06-29 11:10:20,812 - DEBUG - http://localhost:None "DELETE /v1.45/containers/ad8181dbd44c12fe0dc438f93be6a524cf9fd80f64331e3c2bf2e30da49e66b6?v=False&link=False&force=False HTTP/11" 204 0
+2024-06-29 11:10:20,843 - DEBUG - http://localhost:None "POST /v1.45/containers/create?name=test-db HTTP/11" 201 88
+2024-06-29 11:10:20,844 - DEBUG - http://localhost:None "GET /v1.45/containers/ebeaada478746cb5d83e006f8258cd785eeff95b876c77811bdb27aab003d37b/json HTTP/11" 200 None
+2024-06-29 11:10:21,147 - DEBUG - http://localhost:None "POST /v1.45/containers/ebeaada478746cb5d83e006f8258cd785eeff95b876c77811bdb27aab003d37b/start HTTP/11" 204 0
+2024-06-29 11:10:21,148 - DEBUG - http://localhost:None "GET /v1.45/containers/ebeaada478746cb5d83e006f8258cd785eeff95b876c77811bdb27aab003d37b/json HTTP/11" 200 None
+2024-06-29 11:10:21,149 - DEBUG - http://localhost:None "GET /v1.45/containers/ebeaada478746cb5d83e006f8258cd785eeff95b876c77811bdb27aab003d37b/json HTTP/11" 200 None
+2024-06-29 11:10:22,154 - DEBUG - http://localhost:None "GET /v1.45/containers/ebeaada478746cb5d83e006f8258cd785eeff95b876c77811bdb27aab003d37b/json HTTP/11" 200 None
+2024-06-29 11:10:23,160 - DEBUG - http://localhost:None "GET /v1.45/containers/ebeaada478746cb5d83e006f8258cd785eeff95b876c77811bdb27aab003d37b/json HTTP/11" 200 None
