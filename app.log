@@ -33,3 +33,6 @@ DETAIL:  Key (conversation_id)=(0) is not present in table "conversation".
 [SQL: INSERT INTO message (content, additional, conversation_id, user_id) VALUES (%(content)s, %(additional)s, %(conversation_id)s, %(user_id)s) RETURNING message.id]
 [parameters: {'content': 'what are the tasks for today?', 'additional': '', 'conversation_id': 0, 'user_id': 1}]
 (Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-06-29 20:20:03,369 - ERROR - Unexpected error while creating message: 'property' object is not subscriptable
+2024-06-29 20:21:44,547 - ERROR - Unexpected error while creating message: 'property' object is not subscriptable
+2024-06-29 20:26:31,742 - ERROR - Unexpected error while creating message: list index out of range

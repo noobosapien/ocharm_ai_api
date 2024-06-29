@@ -1,7 +1,7 @@
 from typing import List
 
 from langchain.tools import Tool
-from pydantic import BaseModel
+from pydantic.v1 import BaseModel
 
 
 def list_tables():

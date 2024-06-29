@@ -1,9 +1,9 @@
 import logging
 
-from assistant.agent import Assistant
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
+from app.assistant.agent import Assistant  # noqa
 from app.db_connection import SessionLocal, get_db_session
 from app.models import Message
 from app.schemas.message_schema import MessageCreate, MessageReturn
@@ -27,6 +27,7 @@ def create_message(message_data: MessageCreate, db: Session = Depends(get_db_ses
 
         # change this
         message = assistant.call_assistant(new_message.content)
+        print(message)
         return new_message
     except HTTPException as http_exc:
         logger.error(f"Error while creating message :{http_exc}")

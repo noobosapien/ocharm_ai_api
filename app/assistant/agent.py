@@ -1,6 +1,5 @@
 from dotenv import load_dotenv
-from handlers.chat_model_start_handler import ChatModelStartHandler
-from langchain.agents import AgentExecutor, OpenAIFunctionsAgent
+from langchain.agents import AgentExecutor, create_openai_functions_agent
 from langchain.memory import ConversationBufferWindowMemory
 from langchain.prompts import (
     ChatPromptTemplate,
@@ -9,8 +8,12 @@ from langchain.prompts import (
 )
 from langchain.schema import SystemMessage
 from langchain_openai.chat_models import ChatOpenAI
-from memories.sql_history import SQLMessageHistory
-from tools.sql import describes_tables_tool, list_tables, run_query_tool
+
+from app.assistant.handlers.chat_model_start_handler import (
+    ChatModelStartHandler,  # noqa
+)
+from app.assistant.memories.sql_history import SQLMessageHistory  # noqa
+from app.assistant.tools.sql import describes_tables_tool, list_tables, run_query_tool
 
 load_dotenv()
 
@@ -45,10 +48,10 @@ class Assistant:
             k=4,
         )
 
-        self.agent = OpenAIFunctionsAgent(
+        self.agent = create_openai_functions_agent(
             llm=self.chat,
-            prompt=self.prompt,
             tools=[run_query_tool, describes_tables_tool],
+            prompt=self.prompt,
         )
 
         self.agent_executor = AgentExecutor(
@@ -59,4 +62,4 @@ class Assistant:
         )
 
     def call_assistant(self, query):
-        return self.agent_executor(query)
+        return self.agent_executor.invoke(query)
