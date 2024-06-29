@@ -1,0 +1,35 @@
+2024-06-29 17:52:43,642 - ERROR - Unexpected error while creating message: Internal server error
+2024-06-29 17:54:59,711 - ERROR - Unexpected error while creating message: (psycopg2.errors.UndefinedTable) relation "message" does not exist
+LINE 1: INSERT INTO message (content, additional, conversation_id, u...
+                    ^
+
+[SQL: INSERT INTO message (content, additional, conversation_id, user_id) VALUES (%(content)s, %(additional)s, %(conversation_id)s, %(user_id)s) RETURNING message.id]
+[parameters: {'content': 'what are the tasks for today?', 'additional': '', 'conversation_id': 0, 'user_id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-06-29 17:56:09,184 - ERROR - Unexpected error while creating message: (psycopg2.errors.UndefinedTable) relation "message" does not exist
+LINE 1: INSERT INTO message (content, additional, conversation_id, u...
+                    ^
+
+[SQL: INSERT INTO message (content, additional, conversation_id, user_id) VALUES (%(content)s, %(additional)s, %(conversation_id)s, %(user_id)s) RETURNING message.id]
+[parameters: {'content': 'what are the tasks for today?', 'additional': '', 'conversation_id': 0, 'user_id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-06-29 18:07:46,510 - ERROR - Unexpected error while creating message: (psycopg2.errors.UndefinedTable) relation "user" does not exist
+LINE 1: INSERT INTO "user" (name, role) VALUES ('test', 'primary') R...
+                    ^
+
+[SQL: INSERT INTO "user" (name, role) VALUES (%(name)s, %(role)s) RETURNING "user".id]
+[parameters: {'name': 'test', 'role': 'primary'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-06-29 18:08:51,892 - ERROR - Unexpected error while creating message: (psycopg2.errors.UndefinedTable) relation "user" does not exist
+LINE 1: INSERT INTO "user" (name) VALUES ('test') RETURNING "user".i...
+                    ^
+
+[SQL: INSERT INTO "user" (name) VALUES (%(name)s) RETURNING "user".id, "user".role]
+[parameters: {'name': 'test'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-06-29 18:18:21,987 - ERROR - Unexpected error while creating message: (psycopg2.errors.ForeignKeyViolation) insert or update on table "message" violates foreign key constraint "message_conversation_id_fkey"
+DETAIL:  Key (conversation_id)=(0) is not present in table "conversation".
+
+[SQL: INSERT INTO message (content, additional, conversation_id, user_id) VALUES (%(content)s, %(additional)s, %(conversation_id)s, %(user_id)s) RETURNING message.id]
+[parameters: {'content': 'what are the tasks for today?', 'additional': '', 'conversation_id': 0, 'user_id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
