@@ -1,5 +1,6 @@
 import logging
 
+from assistant.agent import Assistant
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
@@ -12,6 +13,8 @@ logger = logging.getLogger("app")
 router = APIRouter()
 db = SessionLocal()
 
+assistant = Assistant()
+
 
 @router.post("/", response_model=MessageReturn, status_code=201)
 def create_message(message_data: MessageCreate, db: Session = Depends(get_db_session)):
@@ -23,6 +26,7 @@ def create_message(message_data: MessageCreate, db: Session = Depends(get_db_ses
         db.refresh(new_message)
 
         # change this
+        message = assistant.call_assistant(new_message.content)
         return new_message
     except HTTPException as http_exc:
         logger.error(f"Error while creating message :{http_exc}")
