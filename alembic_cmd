@@ -1,2 +1,2 @@
-alembic -n devdb revision --autogenerate -m "1"
+alembic -n devdb revision --autogenerate -m "2"
 alembic -n devdb upgrade head

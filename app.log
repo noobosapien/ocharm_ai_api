@@ -36,3 +36,34 @@ DETAIL:  Key (conversation_id)=(0) is not present in table "conversation".
 2024-06-29 20:20:03,369 - ERROR - Unexpected error while creating message: 'property' object is not subscriptable
 2024-06-29 20:21:44,547 - ERROR - Unexpected error while creating message: 'property' object is not subscriptable
 2024-06-29 20:26:31,742 - ERROR - Unexpected error while creating message: list index out of range
+2024-06-30 09:37:45,063 - ERROR - Unexpected error while creating message: list index out of range
+2024-06-30 11:56:24,408 - ERROR - Unexpected error while creating message: 'Message' object has no attribute 'as_lc_message'
+2024-06-30 15:04:44,419 - ERROR - Unexpected error while creating message: (psycopg2.errors.UndefinedColumn) column message.role does not exist
+LINE 1: ...asks for today?', '', 1, 1) RETURNING message.id, message.ro...
+                                                             ^
+
+[SQL: INSERT INTO message (content, additional, conversation_id, user_id) VALUES (%(content)s, %(additional)s, %(conversation_id)s, %(user_id)s) RETURNING message.id, message.role]
+[parameters: {'content': 'what are the tasks for today?', 'additional': '', 'conversation_id': 1, 'user_id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-06-30 15:20:31,077 - ERROR - Unexpected error while creating message: (psycopg2.errors.NotNullViolation) null value in column "message_role" of relation "message" violates not-null constraint
+DETAIL:  Failing row contains (15, what are the tasks for today?, , 1, 1, null).
+
+[SQL: INSERT INTO message (message_role, content, additional, conversation_id, user_id) VALUES (%(message_role)s, %(content)s, %(additional)s, %(conversation_id)s, %(user_id)s) RETURNING message.id]
+[parameters: {'message_role': None, 'content': 'what are the tasks for today?', 'additional': '', 'conversation_id': 1, 'user_id': 1}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-06-30 15:21:59,194 - ERROR - Unexpected error while creating message: 'role' is an invalid keyword argument for Message
+2024-06-30 15:22:25,819 - ERROR - Unexpected error while creating message: 'Message' object has no attribute 'role'
+2024-06-30 15:22:57,225 - ERROR - Unexpected error while creating message: 'Message' object has no attribute 'role'
+2024-06-30 15:54:30,307 - ERROR - Unexpected error while creating message: (psycopg2.errors.NotNullViolation) null value in column "user_id" of relation "message" violates not-null constraint
+DETAIL:  Failing row contains (22, what are the tasks for today?, null, 1, null, human).
+
+[SQL: INSERT INTO message (message_role, content, additional, conversation_id, user_id) VALUES (%(message_role)s, %(content)s, %(additional)s, %(conversation_id)s, %(user_id)s) RETURNING message.id]
+[parameters: {'message_role': 'human', 'content': 'what are the tasks for today?', 'additional': None, 'conversation_id': 1, 'user_id': None}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-06-30 15:58:36,408 - ERROR - Unexpected error while creating message: list index out of range
+2024-06-30 16:01:21,800 - ERROR - Unexpected error while creating message: list index out of range
+2024-06-30 16:01:26,122 - ERROR - Unexpected error while creating message: list index out of range
+2024-06-30 16:03:34,222 - ERROR - Unexpected error while creating message: list index out of range
+2024-06-30 16:04:08,453 - ERROR - Unexpected error while creating message: list index out of range
+2024-06-30 16:04:44,783 - ERROR - Unexpected error while creating message: list index out of range
+2024-06-30 16:20:44,180 - ERROR - Unexpected error while creating message: 'dict' object has no attribute 'output'

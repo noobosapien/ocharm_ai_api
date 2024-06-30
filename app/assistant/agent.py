@@ -1,6 +1,11 @@
+import traceback
+
 from dotenv import load_dotenv
 from langchain.agents import AgentExecutor, create_openai_functions_agent
-from langchain.memory import ConversationBufferWindowMemory
+from langchain.memory import (  # noqa
+    ConversationBufferMemory,
+    ConversationBufferWindowMemory,
+)
 from langchain.prompts import (
     ChatPromptTemplate,
     HumanMessagePromptTemplate,
@@ -13,14 +18,19 @@ from app.assistant.handlers.chat_model_start_handler import (
     ChatModelStartHandler,  # noqa
 )
 from app.assistant.memories.sql_history import SQLMessageHistory  # noqa
-from app.assistant.tools.sql import describes_tables_tool, list_tables, run_query_tool
+from app.assistant.tools.sql import (  # noqa
+    describes_tables_tool,
+    list_tables,
+    run_query_tool,
+)
 
 load_dotenv()
 
 
 class Assistant:
-    def __init__(self):
-        self.tables = list_tables()
+    def __init__(self, db):
+        self.db = db
+        self.tables = list_tables(self.db)
         self.handler = ChatModelStartHandler()
         self.chat = ChatOpenAI(callbacks=[self.handler])
 
@@ -40,12 +50,16 @@ class Assistant:
             ]
         )
 
-        self.memory = ConversationBufferWindowMemory(
-            memory_key="chat_history",
-            output_key="answer",
-            return_messages=True,
-            chat_memory=SQLMessageHistory(conversation_id=1),
-            k=4,
+        # self.memory = ConversationBufferWindowMemory(
+        #     memory_key="chat_history",
+        #     output_key="answer",
+        #     return_messages=True,
+        #     chat_memory=SQLMessageHistory(conversation_id=1, db=self.db),
+        #     k=4,
+        # )
+
+        self.memory = ConversationBufferMemory(
+            memory_key="chat_history", return_messages=True
         )
 
         self.agent = create_openai_functions_agent(
@@ -56,10 +70,14 @@ class Assistant:
 
         self.agent_executor = AgentExecutor(
             agent=self.agent,
-            verbose=True,
+            verbose=False,
             tools=[run_query_tool, describes_tables_tool],
             memory=self.memory,
         )
 
     def call_assistant(self, query):
-        return self.agent_executor.invoke(query)
+        try:
+            return self.agent_executor.invoke({"input": query})
+        except Exception as e:
+            print(e.__traceback__)
+            print(traceback.format_exc())

@@ -13,7 +13,7 @@ logger = logging.getLogger("app")
 router = APIRouter()
 db = SessionLocal()
 
-assistant = Assistant()
+assistant = Assistant(db)
 
 
 @router.post("/", response_model=MessageReturn, status_code=201)
@@ -21,14 +21,9 @@ def create_message(message_data: MessageCreate, db: Session = Depends(get_db_ses
     try:
         new_message = Message(**message_data.model_dump())
 
-        db.add(new_message)
-        db.commit()
-        db.refresh(new_message)
-
         # change this
         message = assistant.call_assistant(new_message.content)
-        print(message)
-        return new_message
+        return MessageReturn(content=message["output"])
     except HTTPException as http_exc:
         logger.error(f"Error while creating message :{http_exc}")
         raise

@@ -1,3 +1,4 @@
+from langchain.schema.messages import AIMessage, HumanMessage, SystemMessage
 from sqlalchemy import CheckConstraint, Column, Enum, ForeignKey, Integer, String, Text
 from sqlalchemy.dialects.postgresql import TIMESTAMP
 
@@ -27,10 +28,21 @@ class Message(Base):
     __tablename__ = "message"
 
     id = Column(Integer, primary_key=True, nullable=False)
+    message_role = Column(String(7), nullable=False)
     content = Column(Text, nullable=False)
     additional = Column(Text, nullable=True)
     conversation_id = Column(Integer, ForeignKey("conversation.id"), nullable=False)
     user_id = Column(Integer, ForeignKey("user.id"), nullable=False)
+
+    def as_lc_message(self) -> HumanMessage | AIMessage | SystemMessage:
+        if self.message_role == "human":
+            return HumanMessage(content=self.content)
+        elif self.message_role == "ai":
+            return AIMessage(content=self.content)
+        elif self.message_role == "system":
+            return SystemMessage(content=self.content)
+        else:
+            raise Exception(f"Unknown message role: {self.message_role}")
 
     __table_args__ = (
         CheckConstraint("LENGTH(content) > 0", name="message_content_length_check"),
