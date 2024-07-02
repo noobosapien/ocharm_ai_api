@@ -67,3 +67,147 @@ DETAIL:  Failing row contains (22, what are the tasks for today?, null, 1, null,
 2024-06-30 16:04:08,453 - ERROR - Unexpected error while creating message: list index out of range
 2024-06-30 16:04:44,783 - ERROR - Unexpected error while creating message: list index out of range
 2024-06-30 16:20:44,180 - ERROR - Unexpected error while creating message: 'dict' object has no attribute 'output'
+2024-07-02 19:00:18,403 - ERROR - Unexpected error while creating message: Could not locate column in row for column '* FROM task;'
+2024-07-02 19:01:38,317 - ERROR - Unexpected error while creating message: (psycopg2.errors.SyntaxError) syntax error at or near "task"
+LINE 1: SELECT * FROM pg_tables WHERE schemaname task;
+                                                 ^
+
+[SQL: SELECT * FROM pg_tables WHERE schemaname task;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-07-02 19:02:14,689 - ERROR - Unexpected error while creating message: Could not locate column in row for column '* FROM pg_tables WHERE schemaname IN ('task');'
+2024-07-02 19:03:51,995 - ERROR - Unexpected error while creating message: Could not locate column in row for column '* FROM pg_catalog.pg_tables;'
+2024-07-02 19:04:20,705 - ERROR - Unexpected error while creating message: (psycopg2.errors.UndefinedTable) relation "pg_catalog" does not exist
+LINE 1: SELECT * FROM pg_catalog;
+                      ^
+
+[SQL: SELECT * FROM pg_catalog;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-07-02 19:05:29,487 - ERROR - Unexpected error while creating message: Could not locate column in row for column '* FROM pg_tables WHERE schemaname NOT IN ('pg_catalog', 'information_schema');'
+2024-07-02 19:05:46,141 - ERROR - Unexpected error while creating message: 2 validation errors for TaskBase
+answer
+  Input should be a valid string [type=string_type, input_value=[('alembic_version',), ('...('task',), ('message',)], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.7/v/string_type
+error
+  Field required [type=missing, input_value={'answer': [('alembic_ver...'task',), ('message',)]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.7/v/missing
+2024-07-02 19:06:15,525 - ERROR - Unexpected error while creating message: 1 validation error for TaskBase
+error
+  Field required [type=missing, input_value={'answer': "[('alembic_ve...task',), ('message',)]"}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.7/v/missing
+2024-07-02 19:07:39,647 - ERROR - Unexpected error while creating message: Could not locate column in row for column '* FROM pg_tables WHERE schemaname NOT IN ('pg_catalog', 'information_schema');'
+2024-07-02 19:12:21,756 - ERROR - Unexpected error while creating message: (psycopg2.errors.UndefinedColumn) column "task" does not exist
+LINE 1: SELECT task FROM pg_tables WHERE schemaname NOT IN ('pg_cata...
+               ^
+
+[SQL: SELECT task FROM pg_tables WHERE schemaname NOT IN ('pg_catalog', 'information_schema');]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-07-02 19:12:41,151 - ERROR - Unexpected error while creating message: (psycopg2.errors.UndefinedColumn) column "task" does not exist
+LINE 1: SELECT task FROM pg_tables ;
+               ^
+
+[SQL: SELECT task FROM pg_tables ;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-07-02 19:13:19,272 - ERROR - Unexpected error while creating message: (psycopg2.errors.UndefinedTable) relation "ocharm" does not exist
+LINE 1: SELECT task FROM ocharm ;
+                         ^
+
+[SQL: SELECT task FROM ocharm ;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-07-02 19:13:51,738 - ERROR - Unexpected error while creating message: (psycopg2.errors.UndefinedColumn) column "task" does not exist
+LINE 1: SELECT task FROM pg_tables ;
+               ^
+
+[SQL: SELECT task FROM pg_tables ;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-07-02 19:14:36,055 - ERROR - Unexpected error while creating message: Could not locate column in row for column '* FROM pg_tables ;'
+2024-07-02 19:14:52,620 - ERROR - Unexpected error while creating message: (psycopg2.errors.UndefinedTable) relation "ocharm" does not exist
+LINE 1: SELECT * FROM ocharm ;
+                      ^
+
+[SQL: SELECT * FROM ocharm ;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-07-02 19:15:45,958 - ERROR - Unexpected error while creating message: Could not locate column in row for column '* FROM "task";'
+2024-07-02 19:18:52,119 - ERROR - Unexpected error while creating message: Could not locate column in row for column '* FROM "task";'
+2024-07-02 19:26:39,040 - ERROR - Unexpected error while creating message: (psycopg2.errors.UndefinedFunction) function db_id() does not exist
+LINE 1: SELECT DB_NAME(db_id());
+                       ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+[SQL: SELECT DB_NAME(db_id());]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-07-02 19:27:33,352 - ERROR - Unexpected error while creating message: (psycopg2.errors.SyntaxError) syntax error at or near "["
+LINE 1: SELECT DB_NAME() AS [Current Database];
+                            ^
+
+[SQL: SELECT DB_NAME() AS [Current Database];]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-07-02 19:27:53,346 - ERROR - Unexpected error while creating message: (psycopg2.errors.UndefinedFunction) function db_name() does not exist
+LINE 1: SELECT DB_NAME();
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+[SQL: SELECT DB_NAME();]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-07-02 19:32:25,606 - ERROR - Unexpected error while creating message: (psycopg2.errors.SyntaxError) syntax error at or near "*"
+LINE 1: SELECT COUNT(*) FROM *;
+                             ^
+
+[SQL: SELECT COUNT(*) FROM *;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-07-02 19:34:04,626 - ERROR - Unexpected error while creating message: Could not locate column in row for column '* FROM task;'
+2024-07-02 19:34:27,006 - ERROR - Unexpected error while creating message: (psycopg2.errors.SyntaxError) syntax error at or near "SELECT"
+LINE 1: SELECT SELECT * FROM task;
+               ^
+
+[SQL: SELECT SELECT * FROM task;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-07-02 19:34:36,033 - ERROR - Unexpected error while creating message: Could not locate column in row for column '* FROM task;'
+2024-07-02 19:38:57,416 - ERROR - Unexpected error while creating message: Could not locate column in row for column 'id, name FROM task;'
+2024-07-02 19:42:20,464 - ERROR - Unexpected error while creating message: Could not locate column in row for column '* FROM task WHERE id=1;'
+2024-07-02 20:03:33,418 - ERROR - Unexpected error while creating message: (psycopg2.errors.UndefinedColumn) column "task" does not exist
+LINE 1: ... from INFORMATION_SCHEMA.COLUMNS where table_name IN (task);
+                                                                 ^
+
+[SQL: SELECT column_name, data_type, character_maximum_length from INFORMATION_SCHEMA.COLUMNS where table_name IN (task);]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-07-02 20:03:52,912 - ERROR - Unexpected error while creating message: Could not locate column in row for column 'column_name, data_type, character_maximum_length from INFORMATION_SCHEMA.COLUMNS where table_name IN (user);'
+2024-07-02 20:04:25,421 - ERROR - Unexpected error while creating message: (psycopg2.errors.UndefinedColumn) column "user" does not exist
+LINE 1: ...rom INFORMATION_SCHEMA.COLUMNS where table_name IN ("user");
+                                                               ^
+
+[SQL: SELECT column_name, data_type, character_maximum_length from INFORMATION_SCHEMA.COLUMNS where table_name IN ("user");]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-07-02 20:05:55,900 - ERROR - Unexpected error while creating message: (psycopg2.errors.SyntaxError) syntax error at or near "*"
+LINE 1: ...gth from INFORMATION_SCHEMA.COLUMNS where table_name IN (*);
+                                                                    ^
+
+[SQL: SELECT column_name, data_type, character_maximum_length from INFORMATION_SCHEMA.COLUMNS where table_name IN (*);]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-07-02 20:06:10,269 - ERROR - Unexpected error while creating message: (psycopg2.errors.UndefinedColumn) column "pg_catalog" does not exist
+LINE 1: ...m INFORMATION_SCHEMA.COLUMNS where table_name IN (pg_catalog...
+                                                             ^
+HINT:  Perhaps you meant to reference the column "columns.udt_catalog".
+
+[SQL: SELECT column_name, data_type, character_maximum_length from INFORMATION_SCHEMA.COLUMNS where table_name IN (pg_catalog);]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-07-02 20:06:24,241 - ERROR - Unexpected error while creating message: (psycopg2.errors.UndefinedColumn) column "test" does not exist
+LINE 1: ... from INFORMATION_SCHEMA.COLUMNS where table_name IN (test);
+                                                                 ^
+
+[SQL: SELECT column_name, data_type, character_maximum_length from INFORMATION_SCHEMA.COLUMNS where table_name IN (test);]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-07-02 20:06:40,066 - ERROR - Unexpected error while creating message: (psycopg2.errors.UndefinedColumn) column "task" does not exist
+LINE 1: ... from INFORMATION_SCHEMA.COLUMNS where table_name IN (task);
+                                                                 ^
+
+[SQL: SELECT column_name, data_type, character_maximum_length from INFORMATION_SCHEMA.COLUMNS where table_name IN (task);]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-07-02 20:07:41,172 - ERROR - Unexpected error while creating message: Could not locate column in row for column 'column_name, data_type, character_maximum_length from INFORMATION_SCHEMA.COLUMNS where table_name IN ('task');'
+2024-07-02 20:08:01,843 - ERROR - Unexpected error while creating message: (psycopg2.errors.UndefinedColumn) column "task" does not exist
+LINE 1: ... from INFORMATION_SCHEMA.COLUMNS where table_name IN (task);
+                                                                 ^
+
+[SQL: SELECT column_name, data_type, character_maximum_length from INFORMATION_SCHEMA.COLUMNS where table_name IN (task);]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-07-02 20:10:31,571 - ERROR - Unexpected error while creating message: list_tables() missing 1 required positional argument: 'db'
+2024-07-02 21:04:01,017 - ERROR - Unexpected error while creating message: Could not locate column in row for column '* from task;'

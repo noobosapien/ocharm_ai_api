@@ -42,6 +42,7 @@ class Assistant:
                         f"The database has tables of: {self.tables}\n"
                         "DO NOT MAKE ANY ASSUMPTIONS ABOUT WHAT TABLES EXIST "
                         "OR WHAT COLUMNS EXIST. INSTEAD USE THE 'describe_tables' function"
+                        "IMPORTANT: DO NOT ADD SELECT AT THE FRONT OF THE QUERY"
                     )
                 ),
                 MessagesPlaceholder(variable_name="chat_history"),

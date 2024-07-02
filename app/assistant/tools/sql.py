@@ -29,12 +29,15 @@ def run_postgres_query(query):
     try:
         query = query.lower()
         query.replace("select", "")
+        query = query[6:]
+        query += ";"
         print("\n\n\n\n\n\n\n\n\n", query, "\n\n\n\n\n\n\n\n\n")
         command = text(query)
         result = db.query(command).all()
 
         return result
     except Exception as e:
+        print("\n\n\n\n\n\n\n\n\n", e, "\n\n\n\n\n\n\n\n\n")
         return f"The following error occurred: {str(e)}"
 
 
@@ -53,11 +56,9 @@ run_query_tool = Tool.from_function(
 def describe_tables(table_names):
     try:
         tables = ", ".join("'" + item + "'" for item in table_names)
-        # rows = text(
-        #     f"tablename FROM pg_tables WHERE type='table' and name IN ({tables})"
-        # )
+
         rows = text(
-            f"column_name, data_type, character_maximum_length from INFORMATION_SCHEMA.COLUMNS where table_name IN ({tables});"
+            f'(table_name, column_name) FROM INFORMATION_SCHEMA.COLUMNS WHERE CAST("table_schema" AS text) = \'public\' AND CAST("table_name" AS text) IN ({tables});'
         )
 
         result = db.query(rows).all()
