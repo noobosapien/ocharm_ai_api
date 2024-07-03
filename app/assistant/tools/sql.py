@@ -27,13 +27,13 @@ def list_tables(db: Session):
 
 def run_postgres_query(query):
     try:
-        query = query.lower()
-        query.replace("select", "")
-        query = query[6:]
+        # query = query.lower()
+        # query.replace("select", "")
+        # query = query[6:]
         query += ";"
         print("\n\n\n\n\n\n\n\n\n", query, "\n\n\n\n\n\n\n\n\n")
         command = text(query)
-        result = db.query(command).all()
+        result = db.execute(command).all()
 
         return result
     except Exception as e:

@@ -32,17 +32,18 @@ class Assistant:
         self.db = db
         self.tables = list_tables(self.db)
         self.handler = ChatModelStartHandler()
-        self.chat = ChatOpenAI(callbacks=[self.handler])
+        self.chat = ChatOpenAI(model="gpt-4o", callbacks=[self.handler])
 
         self.prompt = ChatPromptTemplate(
             messages=[
                 SystemMessage(
                     content=(
-                        "You are an AI that has access to a PostgresSQL database.\n"
+                        "You are an AI that has access to a PostgresSQL database with SQLALCHEMY ORM.\n"
                         f"The database has tables of: {self.tables}\n"
                         "DO NOT MAKE ANY ASSUMPTIONS ABOUT WHAT TABLES EXIST "
                         "OR WHAT COLUMNS EXIST. INSTEAD USE THE 'describe_tables' function"
-                        "IMPORTANT: DO NOT ADD SELECT AT THE FRONT OF THE QUERY"
+                        "IMPORTANT: NEVER ADD '*' TO A QUERY"
+                        "IMPORTANT: NEVER ADD 'SELECT' AT THE BEGINNING OF THE QUERY"
                     )
                 ),
                 MessagesPlaceholder(variable_name="chat_history"),

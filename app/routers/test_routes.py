@@ -49,12 +49,12 @@ def create_message(db: Session = Depends(get_db_session)):
 @router.post("/task", response_model=TaskBase, status_code=201)
 def get_task(db: Session = Depends(get_db_session)):
     try:
-        command = text(
-            "tablename FROM pg_tables WHERE schemaname NOT IN ('pg_catalog', 'information_schema');"
-        )
+        # command = text(
+        #     "tablename FROM pg_tables WHERE schemaname NOT IN ('pg_catalog', 'information_schema');"
+        # )
 
-        command = text("name from task where id = 1;")
-        tasks = db.query(command).all()
+        command = text("select * from task;")
+        tasks = db.execute(command).all()
 
         tables = list_tables(db)
         des = describe_tables(tables)
